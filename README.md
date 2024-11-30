@@ -277,8 +277,8 @@ Project Link: [https://github.com/akparhi/zod-prisma-types](https://github.com/a
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[npm-shield]: https://img.shields.io/npm/v/zod-prisma-types?style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/zod-prisma-types
+[npm-shield]: https://img.shields.io/npm/v/@inkheart/zod-prisma-types?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@inkheart/zod-prisma-types
 [contributors-shield]: https://img.shields.io/github/contributors/akparhi/zod-prisma-types.svg?style=for-the-badge
 [contributors-url]: https://github.com/akparhi/zod-prisma-types/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/akparhi/zod-prisma-types.svg?style=for-the-badge
