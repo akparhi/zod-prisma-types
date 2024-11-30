@@ -1,0 +1,88 @@
+{
+	"name": "@inkheart/zod-prisma-types",
+	"version": "2.0.0",
+	"description": "A Prisma generator that creates Zod schemas for all of your models",
+	"license": "MIT",
+	"author": "Anand Kumar Parhi",
+	"homepage": "https://github.com/akparhi/zod-prisma-types",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/akparhi/zod-prisma-types"
+	},
+	"bugs": {
+		"url": "https://github.com/akparhi/zod-prisma-types/issues"
+	},
+	"main": "dist/index.js",
+	"module": "dist/zod-prisma-types.esm.js",
+	"typings": "dist/index.d.ts",
+	"bin": {
+		"zod-prisma-types": "bin/cli.js"
+	},
+	"keywords": [
+		"zod",
+		"prisma",
+		"generator"
+	],
+	"files": [
+		"bin",
+		"dist"
+	],
+	"scripts": {
+		"build": "dts build --target node --format cjs --rollupTypes",
+		"lint": "tsc --noEmit && dts lint src --ignore-pattern src/test/functional",
+		"prepare": "husky install",
+		"prepublish": "dts build --target node --format cjs --rollupTypes",
+		"start": "dts watch",
+		"test": "dts test --maxWorkers=4 --verbose"
+	},
+	"prettier": {
+		"printWidth": 100,
+		"semi": false,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
+	"eslintConfig": {
+		"rules": {
+			"react-hooks/rules-of-hooks": "off"
+		}
+	},
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"dependencies": {
+		"@prisma/generator-helper": "^6.0.0",
+		"execa": "5.1.1",
+		"parenthesis": "^3.1.8",
+		"ts-morph": "^19.0.0"
+	},
+	"devDependencies": {
+		"@prisma/client": "^6.0.0",
+		"@prisma/sdk": "^4.0.0",
+		"@tsconfig/recommended": "^1.0.2",
+		"@types/fs-extra": "^11.0.1",
+		"dts-cli": "^2.0.3",
+		"fast-glob": "^3.3.1",
+		"fs-extra": "^11.1.1",
+		"husky": "^8.0.3",
+		"jest-mock-extended": "^3.0.5",
+		"prisma": "^6.0.0",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.0",
+		"zod": "^3.19.1"
+	},
+	"peerDependencies": {
+		"decimal.js": "^10.0.0",
+		"prisma": "^6.0.0",
+		"zod": "^3.0.0"
+	},
+	"peerDependenciesMeta": {
+		"decimal.js": {
+			"optional": true
+		}
+	},
+	"engines": {
+		"node": ">=20"
+	}
+}
