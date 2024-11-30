@@ -45,6 +45,7 @@ generatorHandler({
 			{ overwrite: true }
 		)
 
+		// @ts-ignore
 		generateBarrelFile(models, indexFile)
 
 		indexFile.formatText({
