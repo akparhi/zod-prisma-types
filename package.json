@@ -53,7 +53,7 @@
 	},
 	"dependencies": {
 		"@prisma/generator-helper": "^6.0.0",
-		"execa": "5.1.1",
+		"execa": "9.5.1",
 		"parenthesis": "^3.1.8",
 		"ts-morph": "^19.0.0"
 	},
